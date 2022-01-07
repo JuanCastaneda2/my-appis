@@ -6,13 +6,6 @@ environments:
                     url: 'https://40.114.39.184' 
                 sandbox:
                     url: 'https://40.114.39.184' 
-            deploymentEnvironments:
-                - displayOnDevportal: true
-                  deploymentEnvironment: Default
-                  deploymentVhost : 40.114.39.184
-                - displayOnDevportal: true
-                  deploymentEnvironment: Label1
-                  deploymentVhost : 40.114.39.184
     - name: prod
         configs:
             endpoints:
@@ -20,10 +13,7 @@ environments:
                     url: 'https://40.114.39.184'
                 sandbox:
                     url: 'https://40.114.39.184'
-            deploymentEnvironments:
-                - displayOnDevportal: true
-                  deploymentEnvironment: Label2
-                  deploymentVhost : 40.114.39.184
-                - displayOnDevportal: true
-                  deploymentEnvironment: Label3
-                  deploymentVhost : 40.114.39.184
+
+import:
+    update: true
+    preserveProvider: true
