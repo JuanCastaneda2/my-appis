@@ -1,0 +1,29 @@
+environments: 
+    - name: dev 
+        configs:
+            endpoints: 
+                production: 
+                    url: 'https://40.114.39.184' 
+                sandbox:
+                    url: 'https://40.114.39.184' 
+            deploymentEnvironments:
+                - displayOnDevportal: true
+                  deploymentEnvironment: Default
+                  deploymentVhost : 40.114.39.184
+                - displayOnDevportal: true
+                  deploymentEnvironment: Label1
+                  deploymentVhost : 40.114.39.184
+    - name: prod
+        configs:
+            endpoints:
+                production:
+                    url: 'https://40.114.39.184'
+                sandbox:
+                    url: 'https://40.114.39.184'
+            deploymentEnvironments:
+                - displayOnDevportal: true
+                  deploymentEnvironment: Label2
+                  deploymentVhost : 40.114.39.184
+                - displayOnDevportal: true
+                  deploymentEnvironment: Label3
+                  deploymentVhost : 40.114.39.184
